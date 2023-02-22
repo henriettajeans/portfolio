@@ -1,5 +1,9 @@
 export interface IProject{
-    id:number;
-    title:string;
-    author: string
+    id:string;
+    html_url: string;
+    topics: [];
+    created_at: string;
+    name: string;
+    language: string
+
   }
