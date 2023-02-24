@@ -1,9 +1,9 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import './App.scss';
+import { Footer } from './components/footer/footer';
+import { Home } from './components/home/home';
 import { Nav } from './components/nav/nav';
-import { Projects } from './components/projects/projects';
-import { IProject } from './models/IProjects';
 import { myProjects } from './models/projectsSing';
 
 
@@ -15,8 +15,9 @@ function App() {
   return (
     <>
     <Nav/>
-    
+    <Home/>
     <Outlet></Outlet>
+    <Footer/>
     </>
   );
 }

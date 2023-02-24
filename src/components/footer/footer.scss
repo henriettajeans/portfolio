@@ -1,0 +1,46 @@
+@use '../../styles/variables' as v;
+.footer-container{
+    width: 100vw;
+    height: 150px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: v.$light;
+    box-shadow: 0px -10px 15px 5px v.$light;
+
+    &__name{
+        margin:10px;
+        &__first{
+            font-family: v.$fine;
+            font-size: 2.5em;
+            color: v.$coral;
+        }
+        &__last{
+            margin-left: 5px;
+            font-family: v.$font;
+            font-size: 2em;
+            color: v.$cerise;
+        }
+    }
+    &__mail{
+        align-items: center;
+        &__1{
+            font-family: v.$desc;
+            font-size: 2em;
+            text-decoration: none;
+            text-transform: none;
+            color: v.$cerise
+        }
+        &__2{
+            font-family: v.$mono;
+            font-size: 2em;
+            text-decoration: none;
+            color: v.$coral;
+            &__link{
+                text-decoration: none;
+            color: v.$coral;
+            }
+        }
+    }
+}

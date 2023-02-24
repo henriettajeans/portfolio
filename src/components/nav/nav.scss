@@ -1,5 +1,27 @@
+@use '../../styles/variables' as v;
 .nav-container{
     width: 100%;
     height: 75px;
-    background-color: beige;
+    background-color: v.$light;
+
+    &__flex{
+        
+        &__list{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2%;
+            
+            
+            &__item{
+                align-items:center;
+                font-family: v.$mono;
+                list-style: none;
+                font-size: 1.8em;
+                &__link{
+                color: v.$coral;
+                text-decoration: none;
+                }
+            }
+        }
+    }
 }

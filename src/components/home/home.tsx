@@ -1,3 +1,4 @@
+import './home.scss';
 export const Home =()=>{
-    return (<>Home works!</>);
+    return (<div>Home works!</div>);
 }
