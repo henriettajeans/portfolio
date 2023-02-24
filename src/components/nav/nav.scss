@@ -1,27 +1,81 @@
 @use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
 .nav-container{
     width: 100%;
     height: 75px;
     background-color: v.$light;
-
-    &__flex{
         
-        &__list{
+          
+        &__flex{
+            overflow: hidden;
+            overflow-y: auto;
+            height: 100%;
+            &__list{
             display: flex;
             justify-content: space-evenly;
             margin: 2%;
+            text-align: center;
+        padding-top: 25px;
+        background-color: v.$light;
             
-            
-            &__item{
+                &__item{
                 align-items:center;
                 font-family: v.$mono;
                 list-style: none;
                 font-size: 1.8em;
-                &__link{
-                color: v.$coral;
-                text-decoration: none;
-                }
+                    &__link{
+                    color: v.$coral;
+                    text-decoration: none;
+                    }
             }
         }
+        .hamburger {
+            position: absolute;
+            text-align: center;
+            top: 6em;
+            right: 5%;
+            margin: -70px 4px 0px -2em ;
+            width: 2em;
+            height: 45px;
+            z-index: 5;
+            margin-bottom: 5px;
+            padding-right: 4px;
+          }
+          .hamburger div {
+            position: relative;
+            width: 3em;
+            height: 7px;
+            border-radius: 3px;
+            background-color: v.$pink;
+            margin-top: 10px;
+            transition: all 0.3s ease-in-out;
+            
+          }
+          
+        }
+        #toggle {
+            display: none;
+          }
+          #toggle:checked + .hamburger .top-bun {
+            transform: rotate(-45deg);
+          }
+          #toggle:checked + .hamburger .bottom-bun {
+            opacity: 0;
+            transform: rotate(45deg);
+          }
+          #toggle:checked + .hamburger .meat {
+            transform: rotate(45deg);
+            margin-top: -7px;
+          }
+            
+          #toggle:checked + .hamburger + .nav {
+            top: 0;
+            transform: scale(1);
+          }
+          @include m.desktop{
+            #toggle {
+              display: none;
+            }
     }
+    
 }

@@ -1,4 +1,7 @@
+import { Welcome } from '../welcome/welcome';
 import './home.scss';
 export const Home =()=>{
-    return (<div>Home works!</div>);
+    return (
+    <Welcome/>
+    );
 }

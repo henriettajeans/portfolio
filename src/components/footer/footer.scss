@@ -1,9 +1,12 @@
 @use '../../styles/variables' as v;
+@use '../../styles/mixins' as m;
 .footer-container{
     width: 100vw;
     height: 150px;
     margin: 0;
+    margin-top: 8%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: v.$light;
@@ -27,14 +30,14 @@
         align-items: center;
         &__1{
             font-family: v.$desc;
-            font-size: 2em;
+            font-size: 1.4em;
             text-decoration: none;
             text-transform: none;
             color: v.$cerise
         }
         &__2{
             font-family: v.$mono;
-            font-size: 2em;
+            font-size: 1.4em;
             text-decoration: none;
             color: v.$coral;
             &__link{
@@ -42,5 +45,8 @@
             color: v.$coral;
             }
         }
+    }
+    @include m.desktop{
+        flex-direction: row;
     }
 }
