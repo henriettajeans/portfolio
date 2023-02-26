@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate, Link, useOutletContext, useParams } from "react-router-dom";
+import { ProjectContext } from "../../App";
 import { IProject } from "../../models/IProjects";
 import { getProjects } from "../../services/getProjects";
 import './projects.scss';
 
 export const Projects=()=>{
     const [projects, setProjects] = useState<IProject[]>([]);
+    const routeParams = useParams;
+    const navigate =useNavigate();
+
+    const showOneProject = () => {
+        navigate(`/project/${projects}`);
+      };
     useEffect(() => {
         const getData = async () => {
           let projects = await getProjects();
@@ -27,6 +34,7 @@ export const Projects=()=>{
                 <span className="myProjects--container__components__created">Skapades {project.created_at}</span>
                 <p className="myProjects--container__components__lang">{project.language}</p>
                 <Link to ={`/project/${project.id}`} className="myProjects--container__components__btn">Check this project out</Link>
+
             </div>
         
         )
@@ -39,6 +47,7 @@ export const Projects=()=>{
     </section>
     <div className="myProjects--container">
     {html}
+    <button onClick={showOneProject}>Kolla på ett project!</button>
     </div>
     </>
     </>);

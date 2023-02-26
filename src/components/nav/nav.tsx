@@ -11,7 +11,7 @@ export const Nav =() => {
                 <li className="nav-container__flex__list__item">
                 <Link to="/projects" className="nav-container__flex__list__item__link">Projekt</Link></li>
                 <li className="nav-container__flex__list__item">
-                <Link to="/" className="nav-container__flex__list__item__link">Om</Link></li>
+                <Link to="/about" className="nav-container__flex__list__item__link">Om</Link></li>
                 <input id="toggle" type="checkbox" />
           <label htmlFor="toggle" className="hamburger">
             <div className="top-bun"></div>

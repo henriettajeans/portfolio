@@ -73,7 +73,7 @@
             transform: scale(1);
           }
           @include m.desktop{
-            #toggle {
+            .hamburger{
               display: none;
             }
     }

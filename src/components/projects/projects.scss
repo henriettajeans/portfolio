@@ -3,11 +3,19 @@
 
 .myProjects--title{
     margin: 5%;
+    margin-top: 10%;
 
     &__text{
         font-family: v.$mono;
         font-size: 3em;
         margin-left: 10%;
+        background: 
+        -webkit-linear-gradient(v.$coral, v.$yale-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        @include m.tablet{
+            font-size: 5em;
+        }
     }
 }
 .myProjects--container{
@@ -40,12 +48,15 @@
              flex-direction: column;
              gap: 20px;
 
-            
+        @include  m.tablet{
+            width:60%;
+        }
              
 
              &__title{
                 font-family: v.$fine;
                 margin-bottom: 5%;
+                color: v.$yale-blue;
              }
              &__link{
                 font-size: 0.8em;
@@ -55,14 +66,16 @@
             }
              &__created{
                 font-family: v.$mono;
+                color: v.$dark;
              }
              &__lang{
                 font-family: v.$desc;
+                color: v.$cerise;
              }
              &__btn{
                 width: 70%;
                 text-align: center;
-                font-family: v.$sans;
+                font-family: v.$desc;
                 text-decoration: none;
                 color: v.$easyred;
                 padding: 2%;
