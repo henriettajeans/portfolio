@@ -11,8 +11,8 @@ export const Footer =()=>{
                 <span className="footer-container__name__last">Jeansson</span>
             </section>
             <section className="footer-container__mail">
-                <Link to="henrietta.jeansson@medieinstitutet.se" className="footer-container__mail__1">henrietta.jeansson</Link>
-                <Link to="henrietta.jeansson@medieinstitutet.se" className="footer-container__mail__2">@medieinstitutet.se</Link>
+                <Link to="mailto:henrietta.jeansson@medieinstitutet.se" className="footer-container__mail__1">henrietta.jeansson</Link>
+                <Link to="mailto:henrietta.jeansson@medieinstitutet.se" className="footer-container__mail__2">@medieinstitutet.se</Link>
             </section>
         </section>
     )

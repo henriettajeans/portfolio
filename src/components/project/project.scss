@@ -3,4 +3,77 @@
 
 .project-component{
     height: 400px;
+    &__title{
+        font-family: v.$mono;
+        font-size: 3em;
+        margin-left: 10%;
+        background: 
+        -webkit-linear-gradient(v.$coral, v.$yale-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 5%;
+        margin-top: 3%;
+
+        @include m.tablet{
+            font-size: 4em;
+        }
+    }
+    &__flex{
+        margin-top: 10%;
+    &__desctitle{
+        font-family: v.$mono;
+        font-size: 2em;
+        margin-left: 10%;
+        background: 
+        -webkit-linear-gradient(v.$coral, v.$yale-blue);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        flex-direction: column;
+    }
+    &__desc{
+        width: 90%;
+       
+        display: flex;
+        justify-content: center;
+
+    }
+}
+        @include m.desktop{
+                height: 100%;
+                width:100%;
+                display: flex;
+                gap:10%;
+            
+                &__title{
+                    font-family: v.$sans;
+                    font-size: 5em;
+                    margin-left: 10%;
+                    background: 
+                    -webkit-linear-gradient(v.$coral, v.$yale-blue);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    margin-bottom: 5%;
+                    margin-top: 10%;
+                }
+            &__flex{
+                margin-top: 10%;
+                display: flex;
+                flex-direction: column;
+            &__desctitle{
+                font-family: v.$mono;
+                font-size: 2em;
+                margin-left: 10%;
+                background: 
+                -webkit-linear-gradient(v.$coral, v.$yale-blue);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                flex-direction: column;
+                margin-bottom: 3%;
+            }
+            &__desc{
+                width: 80%;
+            font-size: 1.1em;
+                }
+            }
+        }
 }
