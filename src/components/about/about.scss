@@ -1,0 +1,11 @@
+@use '../../styles/variables' as v;
+h1{
+    font-family: v.$font;
+    font-size: 3em;
+    margin:2em;
+}
+p{
+    font-size: 2em;
+    font-family: v.$fine;
+    padding-left: 2em;
+}
