@@ -1,0 +1,22 @@
+@use '../../styles/variables.scss' as v;
+@use '../../styles/mixins' as m;
+
+.img-wrapper{
+    position: relative;
+    text-align: center;
+    
+
+    &__title{
+
+    }
+    &__desc{
+
+    }
+    &__src{
+        width:90%;
+        @include m.desktop{
+            width: 60%;
+        }
+
+    }
+}

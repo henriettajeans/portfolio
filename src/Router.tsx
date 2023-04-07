@@ -4,31 +4,37 @@ import App from "./App";
 import { Home } from "./components/home/home";
 import { Project } from "./components/project/project";
 import { Projects } from "./components/projects/projects";
+import { Resume } from "./components/resume/resume";
 
-export const router = createBrowserRouter ([
+export const router = createBrowserRouter([
   {
     path: '/',
-    element:<App/>,
+    element: <App />,
     children: [
       {
         path: '/',
-        element: <Home/>,
+        element: <Home />,
         index: true
       },
       {
         path: '/about',
-        element: <About/>
+        element: <About />
       },
-        {
-            path: '/projects',
-            element: <Projects/>,
-        },
-        {
-          path: '/project/:id',
-          element: <Project/>
-        }
-        
+      {
+        path: '/projects',
+        element: <Projects />,
+      },
+      {
+        path: '/project/:id',
+        element: <Project />
+      },
+      {
+        path: 'resume',
+        element: <Resume />
+
+      }
+
     ]
   },
-  
+
 ])
