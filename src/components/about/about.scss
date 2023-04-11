@@ -1,11 +1,80 @@
 @use '../../styles/variables' as v;
-h1{
-    font-family: v.$font;
-    font-size: 3em;
-    // margin:2em;
-}
-p{
-    font-size: 2em;
-    font-family: v.$fine;
-    padding-left: 2em;
+@use '../../styles/mixins' as m;
+.about-container{
+    
+    height: calc(100vh - 255px);
+    width: 100%;
+    &__title{
+        font-family: v.$font;
+        font-size: 3em;
+        padding: 5%;
+        color: v.$coral;
+        text-align: center;
+    }
+    &__wrapper{
+        text-align: center;
+        width: 90%;
+        margin-left: 5%;
+
+        &__line{
+            width:92%;
+            height: 0.2vh;
+            color: v.$coral;
+            background-color: v.$coral;
+            margin: 4%;
+        }
+
+        
+        &__desc{
+            font-family: v.$fine;
+            color: v.$ebony;
+            font-size: 1.2em;
+            padding-bottom: 5%;
+            
+        }
+        &__collection{
+            &__link{
+                text-decoration: none;
+                color:v.$ebony;
+                padding-bottom: 10%;
+                text-align: left;
+                
+                &__text{
+                    font-size: 1.2em;
+                    font-family: v.$fine;
+                    padding-top: 6%;
+                    margin-left: 10%;
+                }
+                &__icon{
+                    color: v.$cerise;
+                }
+            }
+        }
+    }
+    @include m.desktop{
+        height: 100%;
+        width:100%;
+        &__wrapper{
+            display: flex;
+
+            &__line{
+                width:2px;
+                height: 10vh;
+            }
+
+            &__desc{
+                width: 45%
+            }
+
+            &__collection{
+                width: 45%;
+                &__link{
+                    
+                    &__text{
+                        flex-direction: column;
+                    }
+            }
+            }
+        }
+    }
 }
