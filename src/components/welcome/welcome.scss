@@ -12,6 +12,7 @@
     &__text{
         font-size: 2.2em;
         font-family: v.$fine;
+        color: v.$coral;
     }
     @include m.tablet{
         width:80%;

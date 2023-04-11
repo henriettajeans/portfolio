@@ -30,10 +30,11 @@ export const Project = (() => {
     <article className="project-component">
       <h1 className="project-component__title">{project?.name}</h1>
       <div className="project-component__flex">
-        <span className="project-component__flex__date">{project?.created_at}</span>
-        <p className="project-component__flex__url">{project?.html_url}</p>
+
         <p className="project-component__flex__desctitle">Description of project</p>
         <p className="project-component__flex__desc">{project?.description}</p>
+        {/* <span className="project-component__flex__date">{project?.created_at}</span> */}
+        <p className="project-component__flex__url">{project?.html_url}</p>
       </div>
     </article>
     {/* {project?.id} */}
