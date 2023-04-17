@@ -3,37 +3,34 @@
 
 .home-container{
     width:90%;
-    margin-top: 10%;
-    margin-left: 5%;
     
-    &__title{
-        font-size: 2em;
-    }
+    min-height: calc(100vh - 400px);
+    display: flex;
+    justify-content: center;
+    
+    
     &__text{
-        font-size: 2.2em;
+        padding: 2rem;
+        font-size:5em;
         font-family: v.$fine;
         color: v.$coral;
+        text-align: center;
+        margin-top: 15%;
+   
     }
     @include m.tablet{
         width:80%;
-        &__title{
-            font-size: 4em;
-        }
+       
         &__text{
-            font-size: 3.5em;
+            font-size: 6em;
         }
     }
     @include m.desktop{
-        width:50%;
-        margin-top: 10%;
-        margin-left: 5%;
-
         &__title{
             font-size: 4.7em;
         }
         &__text{
-            font-size: 5em;
-            font-family: v.$fine;
+            font-size: 7em;
         }
     }
 }

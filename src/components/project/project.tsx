@@ -1,8 +1,9 @@
 
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { IRepo } from "../../models/IProjects";
 import { GetRepoById } from "../../services/getRepoById";
+import { AiOutlineLink } from "react-icons/ai"
 import './project.scss'
 
 
@@ -34,7 +35,12 @@ export const Project = (() => {
         <p className="project-component__flex__desctitle">Description of project</p>
         <p className="project-component__flex__desc">{project?.description}</p>
         {/* <span className="project-component__flex__date">{project?.created_at}</span> */}
-        <p className="project-component__flex__url">{project?.html_url}</p>
+        <p className="project-component__flex__url">
+          <AiOutlineLink />
+          <a href={project?.html_url} className="project-component__flex__url__link">
+            {project?.html_url}
+          </a></p>
+
       </div>
     </article>
     {/* {project?.id} */}

@@ -29,53 +29,54 @@
                     }
             }
         }
-        .hamburger {
-            position: absolute;
-            text-align: center;
-            top: 6em;
-            right: 5%;
-            margin: -70px 4px 0px -2em ;
-            width: 2em;
-            height: 45px;
-            z-index: 5;
-            margin-bottom: 5px;
-            padding-right: 4px;
-          }
-          .hamburger div {
-            position: relative;
-            width: 3em;
-            height: 7px;
-            border-radius: 3px;
-            background-color: v.$pink;
-            margin-top: 10px;
-            transition: all 0.3s ease-in-out;
+    //     .hamburger {
+    //         position: absolute;
+    //         text-align: center;
+    //         top: 6em;
+    //         right: 5%;
+    //         margin: -70px 4px 0px -2em ;
+    //         width: 2em;
+    //         height: 45px;
+    //         z-index: 5;
+    //         margin-bottom: 5px;
+    //         padding-right: 4px;
+    //       }
+    //       .hamburger div {
+    //         position: relative;
+    //         width: 3em;
+    //         height: 7px;
+    //         border-radius: 3px;
+    //         background-color: v.$pink;
+    //         margin-top: 10px;
+    //         transition: all 0.3s ease-in-out;
             
-          }
+    //       }
           
-        }
-        #toggle {
-            display: none;
-          }
-          #toggle:checked + .hamburger .top-bun {
-            transform: rotate(-45deg);
-          }
-          #toggle:checked + .hamburger .bottom-bun {
-            opacity: 0;
-            transform: rotate(45deg);
-          }
-          #toggle:checked + .hamburger .meat {
-            transform: rotate(45deg);
-            margin-top: -7px;
-          }
+    //     }
+    //     #toggle {
+    //         display: none;
+    //       }
+    //       #toggle:checked + .hamburger .top-bun {
+    //         transform: rotate(-45deg);
+    //       }
+    //       #toggle:checked + .hamburger .bottom-bun {
+    //         opacity: 0;
+    //         transform: rotate(45deg);
+    //       }
+    //       #toggle:checked + .hamburger .meat {
+    //         transform: rotate(45deg);
+    //         margin-top: -7px;
+    //       }
             
-          #toggle:checked + .hamburger + .nav {
-            top: 0;
-            transform: scale(1);
-          }
-          @include m.desktop{
-            .hamburger{
-              display: none;
-            }
-    }
+    //       #toggle:checked + .hamburger + .nav {
+    //         top: 0;
+    //         transform: scale(1);
+    //       }
+    //       @include m.desktop{
+    //         .hamburger{
+    //           display: none;
+    //         }
+    // }
     
+}
 }

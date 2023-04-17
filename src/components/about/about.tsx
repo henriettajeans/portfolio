@@ -24,10 +24,10 @@ export const About = () => {
                     <Link to="https://www.linkedin.com/in/henrietta-jeansson/" className="about-container__wrapper__collection__link">
 
                         <p className="about-container__wrapper__collection__link__text">
-                            <BsLinkedin className="about-container__wrapper__collection__link__icon" /> My linkedin profile right here</p>
+                            <BsLinkedin className="about-container__wrapper__collection__link__icon" /> Länk till min LinkedIn</p>
                     </Link>
                     <Link to="https://github.com/henriettajeans" className="about-container__wrapper__collection__link">
-                        <p className="about-container__wrapper__collection__link__text"><VscGithubInverted className="about-container__wrapper__collection__link__icon" /> Check out my </p>
+                        <p className="about-container__wrapper__collection__link__text"><VscGithubInverted className="about-container__wrapper__collection__link__icon" /> Min github </p>
                     </Link>
                 </div>
                 <div className="about-container__wrapper__line"></div>

@@ -2,9 +2,10 @@
 @use '../../styles/mixins' as m;
 
 .project-component{
-    height: 100%;
-    width: 100%;
+    min-height: calc(100vh - 350px);
+    max-width: 100%;
     margin: 10%;
+    margin: 5%;
 
   
     
@@ -25,23 +26,36 @@
     }
     &__flex{
         // margin-top: 10%;
+        margin: 5%;
     &__desctitle{
         font-family: v.$mono;
         font-size: 2em;
         
         background: 
-        -webkit-linear-gradient(v.$coral, v.$yale-blue);
+        -webkit-linear-gradient(v.$coral);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         flex-direction: column;
     }
     &__desc{
         width: 90%;
-
+        font-family: v.$desc;
+    }
+    &__url{
+        font-size: 1rem;
+        margin: 2%;
+        font-family: v.$mono;
+        
+        color: v.$coral;
+        &__link{
+            text-decoration: none;
+            color: v.$coral;
+            
+        }
     }
 }
 @include m.desktop{
-    height: calc(100vh - 330px - 10%);
+    min-height: calc(100vh - 400px);
     width:80%;
     display: flex;
     text-align: center;
@@ -68,6 +82,9 @@
             &__desc{
                 width: 100%;
                 font-size: 1.1em;
+                }
+                &__url{
+                    font-size: 1.4rem;
                 }
             }
         }

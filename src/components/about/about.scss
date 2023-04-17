@@ -2,10 +2,10 @@
 @use '../../styles/mixins' as m;
 .about-container{
     
-    height: calc(100vh - 255px);
+    min-height: calc(100vh - 255px);
     width: 100%;
     &__title{
-        font-family: v.$font;
+        font-family: v.$fine;
         font-size: 3em;
         padding: 5%;
         color: v.$coral;
@@ -52,7 +52,7 @@
         }
     }
     @include m.desktop{
-        height: 100%;
+        min-height: 100%;
         width:100%;
         &__wrapper{
             display: flex;
