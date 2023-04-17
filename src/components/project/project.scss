@@ -10,32 +10,34 @@
   
     
     &__title{
-        font-family: v.$font;
+        font-family: v.$fine;
         font-size: 3em;
         text-align: center;
         background: 
-        -webkit-linear-gradient(v.$coral, v.$yale-blue);
+        -webkit-linear-gradient(v.$coral, v.$easyred);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 5%;
         margin-top: 3%;
-
-        // @include m.tablet{
-        //     font-size: 4em;
-        // }
+        @include m.tablet{
+            font-size: 5em;
+        }
     }
     &__flex{
-        // margin-top: 10%;
-        margin: 5%;
+        text-align: center;
+        margin: 10%;
     &__desctitle{
         font-family: v.$mono;
         font-size: 2em;
-        
+        margin: 5%;
         background: 
-        -webkit-linear-gradient(v.$coral);
+        -webkit-linear-gradient(v.$coral, v.$easyred);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         flex-direction: column;
+        @include m.tablet{
+            font-size: 2.2em;
+        }
     }
     &__desc{
         width: 90%;
@@ -60,17 +62,18 @@
     display: flex;
     text-align: center;
     justify-content: space-evenly;
+    margin-left: 15%;
     
 
     &__title{
         margin-top: 6%;
-        font-family: v.$font;
-        font-size: 4.2em;
+        font-family: v.$fine;
+        font-size: 5.2em;
         height: 100%;
     }
             &__flex{
                 display: flex;
-                gap: 10%;
+                gap: 15%;
                 flex-direction: column;
                 width:100%;
             &__desctitle{
