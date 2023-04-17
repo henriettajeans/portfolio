@@ -35,7 +35,7 @@ export const Projects = () => {
                 <p><Link to={project.html_url} className="myProjects--container__components__link">{project.html_url}</Link></p>
                 <span className="myProjects--container__components__created">Skapades {project.created_at}</span>
                 <p className="myProjects--container__components__lang">{project.language}</p>
-                <Link to={`/project/${project.id}`} className="myProjects--container__components__btn">Mer information om projektet</Link>
+                <Link to={`/project/${project.id}`} className="myProjects--container__components__btn">Beskrivning projektet</Link>
             </div>
         )
     });
